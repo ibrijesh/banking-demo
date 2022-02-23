@@ -1,15 +1,11 @@
 package org.example.repository;
 
 import org.example.model.Customer;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository("db")
-@Primary
 public class CustomerRepositoryDB implements CustomerRepository {
 
     public List<Customer> findAll() {
